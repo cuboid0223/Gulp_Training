@@ -1,0 +1,101 @@
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 30px 88px;
+  &__logo {
+    width: 80px;
+    height: 50px;
+    background-size: 100% 100%;
+    background-image: url("../images/logo.png");
+    @include hide-text;
+  }
+  &__linkList {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .link {
+      font-size: $font-m;
+      color: white;
+    }
+    .link {
+      margin-right: 64px;
+    }
+  }
+}
+
+.footer {
+  background-color: $primary-color;
+  color: white;
+  &__navbar {
+    padding-top: 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__linkList {
+    display: flex;
+    align-items: center;
+    .link {
+      display: block;
+      margin-right: 48px;
+    }
+  }
+  &__iconsBox {
+    display: flex;
+    .icon + .icon {
+      margin-left: 32px;
+    }
+  }
+
+  &__contactBox {
+    padding-top: 36px;
+    border-bottom: 1px solid white;
+    & > a {
+      display: block;
+      font-size: $font-xl;
+      display: flex;
+      align-items: center;
+      margin-bottom: 19px;
+    }
+    .icon {
+      margin-right: 16px;
+    }
+  }
+  &__copyRightBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+    .leftBox {
+      display: flex;
+      align-items: center;
+      & > .copyRightText {
+        margin-left: 38px;
+      }
+    }
+    .rightBox {
+      font-size: $font-xs;
+      a + a {
+        margin-left: 62px;
+      }
+    }
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: flex;
+  transition: all 0.5s;
+  &:hover {
+    width: 200px;
+  }
+}

@@ -1,0 +1,26 @@
+$primary-color: #AA0601;
+$secondary-color: #650300;
+$gray: #555555;
+$white: #FFF;
+$yellow: #FFE180;
+$font-xs: 14px;
+$font-s: 16px;
+$font-m: 20px;
+$font-l: 24px;
+$font-xl: 36px;
+@mixin hide-text {
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+}
+
+@mixin hide-scrollbar {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+    .TheSelector ::-webkit-scrollbar {
+        display: none; //將滾軸移除，但功能還在
+    }
+}
+
