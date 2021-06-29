@@ -182,10 +182,14 @@ a {
 .header__linkList .link {
   font-size: 20px;
   color: white;
+  margin-right: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 5px;
 }
 
-.header__linkList .link {
-  margin-right: 64px;
+.header__linkList .link:hover {
+  border-bottom: 1px solid white;
 }
 
 .footer {
@@ -221,6 +225,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.footer__iconsBox .icon {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__iconsBox .icon:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .footer__iconsBox .icon + .icon {

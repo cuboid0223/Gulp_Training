@@ -24,9 +24,12 @@
     .link {
       font-size: $font-m;
       color: white;
+      margin-right: 60px;
+      transition: 0.5s;
+      padding: 5px;
     }
-    .link {
-      margin-right: 64px;
+    .link:hover {
+      border-bottom: 1px solid white;
     }
   }
 }
@@ -49,6 +52,13 @@
   }
   &__iconsBox {
     display: flex;
+    .icon {
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .icon:hover {
+      transform: translateY(-5px);
+    }
     .icon + .icon {
       margin-left: 32px;
     }
