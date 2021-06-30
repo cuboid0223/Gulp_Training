@@ -1,13 +1,17 @@
 $primary-color: #AA0601;
 $secondary-color: #650300;
+
 $gray: #555555;
-$white: #FFF;
+$lightpink: #AA06010D;
 $yellow: #FFE180;
 $font-xs: 14px;
 $font-s: 16px;
 $font-m: 20px;
 $font-l: 24px;
 $font-xl: 36px;
+$font-xxl: 48px;
+$font-xxxl: 64px;
+$font-xxxxl: 72px;
 @mixin hide-text {
     overflow: hidden;
     text-indent: 101%;

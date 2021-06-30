@@ -1,0 +1,133 @@
+.banner {
+  height: 840px;
+  background-size: 100% 100%;
+  background-image: url("../../../assets/images/banner.png");
+  color: $secondary-color;
+  font-weight: bold;
+  position: relative;
+  &__title {
+    max-width: 576px;
+    font-size: $font-xxxl;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  &__subtitle {
+    display: block;
+    font-size: $font-xl;
+    text-align: right;
+  }
+}
+
+.service {
+  background-color: $lightpink;
+
+  &__list {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    & > li {
+      max-width: 200px;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    .subtitle {
+      padding-top: 40px;
+      color: $secondary-color;
+      font-size: $font-l;
+      font-weight: bold;
+    }
+
+    p {
+      padding-top: 4px;
+      padding-bottom: 80px;
+      font-size: $font-s;
+      text-align: left;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  color: $secondary-color;
+  font-size: $font-xxl;
+  font-weight: bold;
+  padding: 60px 0;
+}
+
+.productCategories {
+  text-align: center;
+
+  .listItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+    & > img {
+      max-width: 635px;
+    }
+    &:nth-child(odd) > img {
+      margin-right: 30px;
+    }
+    &:nth-child(even) > img {
+      margin-left: 30px;
+    }
+    .icon {
+      height: 38px;
+    }
+    & > h3 {
+      font-size: $font-xxl;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $primary-color;
+    }
+  }
+  .listItem:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.crossoverDesign {
+  background-position: center;
+  padding-bottom: 80px;
+  background-image: url("../../assets/images/bg.png");
+  .title {
+    color: white;
+  }
+  .crossoverDesignBox {
+    display: flex;
+    font-weight: bold;
+    a {
+      display: block;
+      width: 540px;
+      height: 472px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      font-size: $font-xxxxl;
+      color: $secondary-color;
+      z-index: 1;
+    }
+    .bg {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      opacity: 0.45;
+      width: 100%;
+      height: 100%;
+    }
+    .doubleA {
+      background-image: url("../../assets/images/product-8.png");
+    }
+    .YOUTH {
+      background-image: url("../../assets/images/product-9.png");
+    }
+  }
+}
