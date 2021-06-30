@@ -6,12 +6,11 @@
 
 ;
 
-@mixin pad {
+@mixin ipad {
     @media(max-width: 767px) {
         @content
     }
 }
-
 ;
 
 @mixin iphone {

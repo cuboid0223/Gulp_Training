@@ -9,24 +9,56 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 0 30px 88px;
+  @include iphone {
+    display: unset;
+    padding: 0;
+  }
+  &__logoLink {
+    @include iphone {
+      display: block;
+      width: 100%;
+      background-color: $primary-color;
+      padding: 10px 0;
+    }
+  }
   &__logo {
     width: 80px;
     height: 50px;
     background-size: 100% 100%;
     background-image: url("../images/logo.png");
     @include hide-text;
+    @include iphone {
+      width: 48px;
+      height: 30px;
+      background-color: $primary-color;
+      margin: 0 auto;
+    }
   }
   &__linkList {
+    background-color: $primary-color;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    @include iphone {
+      text-align: center;
+    }
+    & > li {
+      @include iphone {
+        width: 50%;
+        border: 1px solid white;
+      }
+    }
     .link {
       font-size: $font-m;
       color: white;
       margin-right: 60px;
       transition: 0.5s;
       padding: 5px;
+      @include iphone {
+        margin-right: 0;
+      }
     }
     .link:hover {
       border-bottom: 1px solid white;
@@ -48,6 +80,9 @@
     .link {
       display: block;
       margin-right: 48px;
+    }
+    @include iphone {
+      display: none;
     }
   }
   &__iconsBox {
@@ -83,17 +118,39 @@
     justify-content: space-between;
     align-items: center;
     padding: 28px 0;
+    @include iphone {
+      display: unset;
+    }
     .leftBox {
       display: flex;
       align-items: center;
+      & .icon {
+        @include iphone {
+          display: none;
+        }
+      }
       & > .copyRightText {
         margin-left: 38px;
+        @include iphone {
+          margin-left: 0;
+        }
+      }
+      @include iphone {
+        display: unset;
       }
     }
     .rightBox {
       font-size: $font-xs;
       a + a {
         margin-left: 62px;
+        @include iphone {
+          margin-left: 0;
+        }
+      }
+      & > a {
+        @include iphone {
+          display: block;
+        }
       }
     }
   }
