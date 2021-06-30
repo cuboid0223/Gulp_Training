@@ -132,7 +132,7 @@
   }
 }
 
-.CustomerRecommendation {
+.customerRecommendation {
   padding-bottom: 64px;
   &__list {
     display: flex;
@@ -163,6 +163,53 @@
     .time {
       color: #707070;
       font-size: $font-xs;
+    }
+  }
+}
+
+.contact {
+  //   text-align: center;
+  background-color: $lightpink;
+  padding-bottom: 50px;
+  .container {
+    width: 730px;
+  }
+  .title {
+    color: black;
+    padding-bottom: 24px;
+  }
+  &__subtitle {
+    font-size: $font-m;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    font-size: $font-s;
+    margin-top: 16px;
+  }
+  input[type="text"],
+  textarea {
+    border: black solid 1px;
+    padding: 14px 16px;
+    background-color: $lightpink;
+  }
+  .checkbox {
+    margin-top: 16px;
+  }
+  &__submitBtn {
+    border: none;
+    font-size: $font-m;
+    color: white;
+    width: 40%;
+    padding: 16px;
+    margin: 42px auto;
+    background-color: $primary-color;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      background-color: $secondary-color;
     }
   }
 }

@@ -484,11 +484,11 @@ a {
   background-image: url("../../assets/images/product-9.png");
 }
 
-.CustomerRecommendation {
+.customerRecommendation {
   padding-bottom: 64px;
 }
 
-.CustomerRecommendation__list {
+.customerRecommendation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,35 +497,96 @@ a {
           justify-content: space-between;
 }
 
-.CustomerRecommendation .listItem {
+.customerRecommendation .listItem {
   width: 255px;
   border: 1px solid #dee2e6;
 }
 
-.CustomerRecommendation .listItem .photo {
+.customerRecommendation .listItem .photo {
   width: 100%;
   height: 255px;
 }
 
-.CustomerRecommendation .listItem .textBox {
+.customerRecommendation .listItem .textBox {
   padding: 14px;
 }
 
-.CustomerRecommendation .listItem .name {
+.customerRecommendation .listItem .name {
   color: #212529;
   font-size: 14px;
   font-weight: bold;
 }
 
-.CustomerRecommendation .listItem .content {
+.customerRecommendation .listItem .content {
   color: #212529;
   font-size: 16px;
   padding-top: 7px;
   padding-bottom: 10px;
 }
 
-.CustomerRecommendation .listItem .time {
+.customerRecommendation .listItem .time {
   color: #707070;
   font-size: 14px;
+}
+
+.contact {
+  background-color: #AA06010D;
+  padding-bottom: 50px;
+}
+
+.contact .container {
+  width: 730px;
+}
+
+.contact .title {
+  color: black;
+  padding-bottom: 24px;
+}
+
+.contact__subtitle {
+  font-size: 20px;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact label {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.contact input[type="text"],
+.contact textarea {
+  border: black solid 1px;
+  padding: 14px 16px;
+  background-color: #AA06010D;
+}
+
+.contact .checkbox {
+  margin-top: 16px;
+}
+
+.contact__submitBtn {
+  border: none;
+  font-size: 20px;
+  color: white;
+  width: 40%;
+  padding: 16px;
+  margin: 42px auto;
+  background-color: #AA0601;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact__submitBtn:hover {
+  background-color: #650300;
 }
 /*# sourceMappingURL=all.css.map */
