@@ -1,0 +1,193 @@
+.navbar {
+  //   background-color: blue;
+  &__list {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    // background-color: red;
+  }
+  &__listItem {
+    width: 462px;
+    position: relative;
+    overflow: hidden;
+    @include ipadPro {
+      width: 256px;
+      padding: 16px 21px 8px;
+    }
+    @include iphone {
+      width: 125px;
+      border: 1px solid #dcdcdc;
+      padding: 8px 13px 4px;
+    }
+  }
+  &__listItem > a {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-xs * 3;
+    font-weight: bold;
+    margin-bottom: 8px;
+    @include ipadPro {
+      font-size: $font-xs * 2;
+    }
+    @include iphone {
+      font-size: $font-xs;
+    }
+  }
+
+  .icon {
+    margin-right: 8px;
+    @include ipadPro {
+      width: 32px;
+      height: 32px;
+    }
+    @include iphone {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+    }
+  }
+
+  .active {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 16px;
+    background-color: $primary-color;
+    bottom: 0;
+    left: 0;
+    @include ipadPro {
+      height: 8px;
+    }
+    @include iphone {
+      height: 4px;
+    }
+  }
+}
+
+.opticalPage__banner {
+  display: flex;
+  overflow: hidden;
+  background-size: 100% 100%;
+  & > img {
+    width: 49%;
+    height: 309px;
+    @include iphone {
+      width: 50%;
+      height: 144px;
+    }
+  }
+  img + img {
+    margin-left: 30px;
+    @include iphone {
+      margin-left: 0;
+    }
+  }
+}
+
+.opticalPage__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.opticalPage__mainContainer {
+  padding-bottom: 168px;
+  .title {
+    color: black;
+    padding-bottom: 0;
+    padding-top: 88px;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: $font-s * 2;
+    font-weight: bold;
+    padding-bottom: 40px;
+  }
+  .productsList {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    @include ipadPro {
+      max-width: 700px;
+    }
+
+    & > li {
+      cursor: pointer;
+      margin: 0 15px 104px;
+      @include iphone {
+        margin: 0 auto 104px;
+      }
+    }
+  }
+  .product__image {
+    width: 255px;
+    height: 164px;
+    @include ipadPro {
+      width: 320px;
+    }
+  }
+
+  .product__info {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: $font-l;
+    .price {
+      color: $secondary-color;
+    }
+  }
+
+  .colorList {
+    display: flex;
+
+    cursor: pointer;
+    & > li {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      border-radius: 4px;
+    }
+    &__5F3E2D {
+      background-color: #5f3e2d;
+    }
+    &__B75929 {
+      background-color: #b75929;
+    }
+  }
+}
+
+.pageNavigation {
+  &__list {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    color: $gray;
+  }
+  .page > a {
+    padding: 10px 17px 14px 14px;
+  }
+  .pageButton > a {
+    padding: 10px 12px 14px;
+  }
+  .pageButton > a,
+  .page > a {
+    display: block;
+    border-left: 1px solid $gray;
+  }
+
+  .nextPageButton {
+    background-color: #f2f2f2;
+    & > a {
+      border-right: 1px solid $gray;
+    }
+  }
+
+  .active {
+    background-color: black;
+    color: white;
+  }
+}

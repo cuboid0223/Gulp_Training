@@ -69,6 +69,9 @@
 .footer {
   background-color: $primary-color;
   color: white;
+  @include ipadPro {
+    padding: 40px 39px;
+  }
   @include iphone {
     padding: 23px 15px;
   }
@@ -89,6 +92,7 @@
     .link {
       display: block;
       margin-right: 48px;
+      font-size: $font-s;
     }
     @include iphone {
       display: none;
@@ -101,7 +105,7 @@
       transition: 0.5s;
 
       & > img {
-        @include iphone {
+        @include ipadPro {
           width: 24px;
           height: 24px;
         }
@@ -130,6 +134,9 @@
       display: flex;
       align-items: center;
       margin-bottom: 19px;
+      @include ipadPro {
+        font-size: $font-m;
+      }
       @include iphone {
         font-size: $font-s;
       }
