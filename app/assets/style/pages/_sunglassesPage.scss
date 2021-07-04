@@ -1,0 +1,17 @@
+.sunglassesPage {
+  .productsList {
+    @include ipadPro {
+      max-width: 760px;
+    }
+  }
+  .product__image {
+    width: 350px;
+    @include iphone {
+      width: 330px;
+    }
+  }
+  .product__info {
+    display: unset;
+    padding-bottom: 11px;
+  }
+}

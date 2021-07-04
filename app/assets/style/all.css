@@ -1178,4 +1178,25 @@ img {
   background-color: black;
   color: white;
 }
+
+@media (max-width: 1025px) {
+  .sunglassesPage .productsList {
+    max-width: 760px;
+  }
+}
+
+.sunglassesPage .product__image {
+  width: 350px;
+}
+
+@media (max-width: 568px) {
+  .sunglassesPage .product__image {
+    width: 330px;
+  }
+}
+
+.sunglassesPage .product__info {
+  display: unset;
+  padding-bottom: 11px;
+}
 /*# sourceMappingURL=all.css.map */
