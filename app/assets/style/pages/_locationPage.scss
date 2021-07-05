@@ -1,0 +1,111 @@
+.location {
+  &__banner {
+    height: 304px;
+    background-position: center;
+    background-image: url(../../assets/images/qa.png);
+    @include iphone {
+      height: 143px;
+      background-image: url(../../assets/images/blog-4.png);
+    }
+    & > .container {
+      height: 100%;
+      position: relative;
+    }
+    & > .container > h1 {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      font-size: $font-xxxl;
+      font-weight: bold;
+      @include iphone {
+        font-size: $font-xs * 2;
+      }
+    }
+  }
+  &__bannerIcon {
+    margin-left: 24px;
+    @include iphone {
+      width: 16px;
+      height: 24px;
+      margin-left: 8px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 32px;
+  }
+
+  .moreInfoButton {
+    display: block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+  }
+}
+
+.locationListItem {
+  width: 350px;
+  margin-bottom: 32px;
+  padding-left: 30px;
+  & > h3 {
+    padding: 12px 0 12px 24px;
+    border: 1px solid #00000020;
+    font-size: $font-l;
+    font-weight: bold;
+  }
+  & > .info {
+    font-size: $font-m;
+    padding: 16px 24px;
+    border: 1px solid #00000020;
+  }
+  .infoItem {
+    display: flex;
+  }
+  .infoItem + .infoItem {
+    margin-top: 8px;
+  }
+
+  .infoIcon {
+    width: 21px;
+    height: 21px;
+    margin-right: 12px;
+  }
+}
+
+.selectLocationBox {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+
+  @include iphone {
+    margin: 16px auto 0;
+    justify-content: center;
+  }
+
+  & > label {
+    font-size: $font-l;
+    font-weight: bold;
+    margin-right: 20px;
+    @include iphone {
+      font-size: $font-xs;
+    }
+  }
+  & > select {
+    font-size: $font-m;
+    max-width: 324px;
+    min-width: 277px;
+    color: #495057;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    @include iphone {
+      font-size: $font-xs;
+      padding: 8px;
+    }
+  }
+}
+
+

@@ -158,6 +158,12 @@ img {
   margin: 0 auto;
 }
 
+@media (max-width: 1025px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
 .header {
   background-color: #AA0601;
   display: -webkit-box;
@@ -1198,5 +1204,199 @@ img {
 .sunglassesPage .product__info {
   display: unset;
   padding-bottom: 11px;
+}
+
+.location__banner {
+  height: 304px;
+  background-position: center;
+  background-image: url(../../assets/images/qa.png);
+}
+
+@media (max-width: 568px) {
+  .location__banner {
+    height: 143px;
+    background-image: url(../../assets/images/blog-4.png);
+  }
+}
+
+.location__banner > .container {
+  height: 100%;
+  position: relative;
+}
+
+.location__banner > .container > h1 {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+@media (max-width: 568px) {
+  .location__banner > .container > h1 {
+    font-size: 28px;
+  }
+}
+
+.location__bannerIcon {
+  margin-left: 24px;
+}
+
+@media (max-width: 568px) {
+  .location__bannerIcon {
+    width: 16px;
+    height: 24px;
+    margin-left: 8px;
+  }
+}
+
+.location__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 32px;
+}
+
+.location .moreInfoButton {
+  display: block;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.locationListItem {
+  width: 350px;
+  margin-bottom: 32px;
+  padding-left: 30px;
+}
+
+.locationListItem > h3 {
+  padding: 12px 0 12px 24px;
+  border: 1px solid #00000020;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.locationListItem > .info {
+  font-size: 20px;
+  padding: 16px 24px;
+  border: 1px solid #00000020;
+}
+
+.locationListItem .infoItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.locationListItem .infoItem + .infoItem {
+  margin-top: 8px;
+}
+
+.locationListItem .infoIcon {
+  width: 21px;
+  height: 21px;
+  margin-right: 12px;
+}
+
+.selectLocationBox {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 568px) {
+  .selectLocationBox {
+    margin: 16px auto 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.selectLocationBox > label {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+@media (max-width: 568px) {
+  .selectLocationBox > label {
+    font-size: 14px;
+  }
+}
+
+.selectLocationBox > select {
+  font-size: 20px;
+  max-width: 324px;
+  min-width: 277px;
+  color: #495057;
+  padding: 10px;
+  border: 1px solid #ced4da;
+}
+
+@media (max-width: 568px) {
+  .selectLocationBox > select {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.locationDetail {
+  height: 100%;
+}
+
+.locationDetail .mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 38px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 300px;
+}
+
+@media (max-width: 568px) {
+  .locationDetail .mainContainer {
+    padding: 15px;
+  }
+}
+
+.locationDetail .locationListItem {
+  width: 445px;
+  padding-left: 0;
+}
+
+.locationDetail .locationListItem > img {
+  width: 100%;
+  height: 224px;
+}
+
+.locationDetail #map {
+  width: 635px;
+  height: 422px;
+  margin-left: 30px;
+}
+
+@media (max-width: 568px) {
+  .locationDetail #map {
+    margin-left: 0;
+    height: 227px;
+  }
 }
 /*# sourceMappingURL=all.css.map */
