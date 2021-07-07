@@ -1316,4 +1316,22 @@ img {
     .feedDetailPage__bottomNav .navBox .prevIcon {
       margin-right: 8px; }
 
+@media (max-width: 568px) {
+  .blogPage__nav {
+    display: block !important; } }
+
+@media (max-width: 568px) {
+  .blogPage__nav .blogPage__optionsList {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+.blogPage__nav .blogPage__optionsList > li {
+  font-size: 16px; }
+
+@media (max-width: 568px) {
+  .blogPage__nav .searchIcon {
+    display: none; } }
+
 /*# sourceMappingURL=all.css.map */
