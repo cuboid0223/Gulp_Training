@@ -11,28 +11,28 @@
 
 <body>
   <header class="header">
-    <a href="/" >
+    <a class="header__logoLink" href="/" >
         <h1 class="header__logo" >眼鏡</h1>
     </a>
     
     <ul class="header__linkList">
-      <li><a class='link' href="">系列鏡框</a></li>
-      <li><a class='link' href="">門市據點</a></li>
-      <li><a class='link' href="">部落格</a></li>
-      <li><a class='link' href="">常見問題</a></li>
+      <li><a class='link' href="opticalPage.html">系列鏡框</a></li>
+      <li><a class='link' href="location.html">門市據點</a></li>
+      <li><a class='link' href="blogPage.html">部落格</a></li>
+      <li><a class='link' href="qaPage.html">常見問題</a></li>
     </ul>
   </header>
 
   
 
-<div class="banner">
+<section class="banner">
   <h2 class="banner__title">
     <span class="banner__subtitle">Promise-Desert 2020 早春系列</span>
     看得清，才能看得遠
   </h2>
-</div>
+</section>
 
-<div class="service">
+<section class="service">
   <div class="container">
     <h2 class="title">用專業的心，做專業的事</h2>
     <ul class="service__list">
@@ -58,87 +58,158 @@
         </li>
     </ul>
   </div>
-</div>
+</section>
 
-<div class="productCategories">
+<section class="productCategories">
   <div class="container">
     <h2 class='title'>經典系列鏡框</h2>
     <ul>
       <li class='listItem'>
-        <img src="./assets/images/product-1.png" alt="glass category">
-        <h3>
-          <img class='icon' src="./assets/images/icon-diamond.svg" alt="icon">
-          optical
-        </h3>
+          <img src="./assets/images/product-1.png" alt="glass category">
+          <h3 class='name'>
+            <img class='icon' src="./assets/images/icon-diamond.svg" alt="icon">
+            <img class='iconOnPhone' src="./assets/images/icon-diamond-white.svg" alt="icon">
+            optical
+          </h3>
       </li>
        <li class='listItem'>
         <img src="./assets/images/product-2.png" alt="glass category">
-        <h3>
+        <h3 class='name'>
           <img class='icon' src="./assets/images/icon-sun.svg" alt="icon">
+          <img class='iconOnPhone' src="./assets/images/icon-sun-white.svg" alt="icon">
           sunglasses
         </h3>
       </li>
        <li class='listItem'>
         <img src="./assets/images/product-3.png" alt="glass category">
-        <h3>
+        <h3 class='name'>
           <img class='icon' src="./assets/images/icon-thunder.svg" alt="icon">
+          <img class='iconOnPhone' src="./assets/images/icon-thunder-white.svg" alt="icon">
           functional
         </h3>
       </li>
     </ul>
   </div>
+</section>
 
-  <div class="crossoverDesign">
-    <div class="container">
-      <h2 class="title">聯名設計鏡框</h2>
-      <div class="crossoverDesignBox" >
-        <a class='doubleA' href="#">
-         <h3>Double A+</h3>
-        </a>
-        <a class='YOUTH' href="">YOUTH</a>
-      </div>
+<section class="crossoverDesign">
+  <div class="container">
+    <h2 class="title">聯名設計鏡框</h2>
+    <div class="crossoverDesignBox" >
+      <a class='doubleA' href="#">
+        <div class="bg"></div>
+        Double A+
+      </a>
+      <a class='YOUTH' href="">
+        <div class="bg"></div>
+        YOUTH
+      </a>
     </div>
-     
   </div>
+</section>
+
+<section class="customerRecommendation">
+  <div class="container">
+    <h2 class="title">顧客推薦</h2> 
+    <ul class="customerRecommendation__list">
+      <li class='listItem'>
+        <img class='photo' src="./assets/images/rec-1.png" alt="customer photo">
+        <div class="textBox">
+          <h4 class="name">Jessy</h4>
+          <p class="content">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <span class="time">Last updated 3 mins ago</span>
+        </div>
+      </li>
+      <li class='listItem'>
+        <img class='photo' src="./assets/images/rec-2.png" alt="customer photo">
+        <div class="textBox">
+          <h4 class="name">Karen</h4>
+          <p class="content">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <span class="time">Last updated 3 mins ago</span>
+        </div>
+      </li>
+      <li class='listItem'>
+        <img class='photo' src="./assets/images/rec-3.png" alt="customer photo">
+        <div class="textBox">
+          <h4 class="name">Chelsea</h4>
+          <p class="content">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <span class="time">Last updated 3 mins ago</span>
+        </div>
+      </li>
+      <li class='listItem'>
+        <img class='photo' src="./assets/images/rec-4.png" alt="customer photo">
+        <div class="textBox">
+          <h4 class="name">Jane</h4>
+          <p class="content">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <span class="time">Last updated 3 mins ago</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
   
-</div>
+<section class="contact">
+  <div class="container">
+    <h2 class="title">聯絡我們</h2>
+    <h3 class="contact__subtitle">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</h3>
+    <form class='contact__form' action="">
+      <label for="">姓名</label>
+      <input type="text" placeholder='陳小明'>
+      <label for="">聯絡電話</label>
+      <input type="text" placeholder='0912-345-678'>
+      <label for="">電子郵件</label>
+      <input type="text" placeholder='example@email.com'>
+      <label for="">意見反應</label>
+      <textarea type="text" placeholder='請輸入您的意見'></textarea>
+      <div class="checkbox">
+          <input type="checkbox">
+          <span>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span>
+      </div>
+     
+      <input class='contact__submitBtn' type="submit" value="確認送出">
+    </form>
+  </div>
+</section>
 
 
   <footer class="footer">
     <div class="container">
-      <nav class='footer__navbar'>
-        <ul class='footer__linkList'>
-          <li><a class='link' href="">首頁</a></li>
-          <li><a class='link' href="">系列鏡框</a></li>
-          <li><a class='link' href="">門市據點</a></li>
-          <li><a class='link' href="">部落格</a></li>
-          <li><a class='link' href="">常見問題</a></li>
-        </ul>
+      <section class='footer__navbar'>
+        <div class="leftBox">
+            <ul class='footer__linkList'>
+              <li><a class='link' href="">首頁</a></li>
+              <li><a class='link' href="">系列鏡框</a></li>
+              <li><a class='link' href="">門市據點</a></li>
+              <li><a class='link' href="">部落格</a></li>
+              <li><a class='link' href="">常見問題</a></li>
+            </ul>
+            <div class="footer__contactBox">
+              <a href="tel:0800-000-000">
+                <img class='icon' src="./assets/images/icon-phone.svg" alt="phoneIcon">
+                0800-000-000
+              </a>
+              <a href="mailto:glasses@business.com">
+                <img class='icon' src="./assets/images/icon-mail.svg" alt="mailIcon">
+                glasses@business.com
+              </a>
+            </div>
+        </div>
 
         <ul class="footer__iconsBox">
           <li class='icon'><img src="./assets/images/icon-fb.svg" alt="FB"></li>
           <li class='icon'><img src="./assets/images/icon-ig.svg" alt="IG"></li>
           <li class='icon'><img src="./assets/images/icon-line.svg" alt="LINE"></li>
         </ul>
-      </nav>
-      <div class="footer__contactBox">
-        <a href="tel:0800-000-000">
-          <img class='icon' src="./assets/images/icon-phone.svg" alt="phoneIcon">
-          0800-000-000
-        </a>
-        <a href="mailto:glasses@business.com">
-          <img class='icon' src="./assets/images/icon-mail.svg" alt="mailIcon">
-          glasses@business.com
-        </a>
-      </div>
+      </section>
+      
       <div class="footer__copyRightBox">
-        <div class="leftBox">
-          <a href="/">
-             <img src="./assets/images/logo.png" alt="logo">
-          </a>
-          <p class="copyRightText">Copyright © 2020 Glasses.All rights reserved.</p>
-        </div>
-        <div class="rightBox">
+      
+        <a href="/"  class="iconBox">
+            <img class='icon' src="./assets/images/logo.png" alt="logo">
+        </a>     
+       
+        <div class="infoBox">
+          <h3 class="copyRightText">Copyright © 2020 Glasses.All rights reserved.</h3>
           <a href="#">隱私權政策</a>
           <a href="#">服務條款</a>
         </div>
