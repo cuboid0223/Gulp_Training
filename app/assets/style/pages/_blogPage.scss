@@ -1,0 +1,152 @@
+.blogPage {
+  &__nav {
+    background-color: $secondary-color;
+    @include iphone {
+      display: none;
+    }
+  }
+  &__nav > .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__optionsList {
+    display: flex;
+    justify-content: space-around;
+
+    & > li {
+      font-size: $font-m;
+      color: white;
+      padding: 10px;
+    }
+  }
+  .searchIcon {
+    cursor: pointer;
+  }
+
+  .feedsList {
+    margin-top: 82px;
+    @include iphone {
+      padding: 24px 15px 0px;
+      margin-top: 0;
+    }
+  }
+
+  .feed {
+    display: flex;
+
+    margin-bottom: 60px;
+    @include iphone {
+      margin-bottom: 0;
+      flex-wrap: wrap;
+    }
+    & > a {
+      display: block;
+    }
+    & img {
+      // @include ipadPro {
+      //   width: 330px;
+      //   height: 191px;
+      // }
+      // @include iphone {
+      //  height: 191px;
+      // }
+    }
+
+    .infoBox {
+      width: 40%;
+      padding-left: 30px;
+      position: relative;
+      @include ipadPro {
+        width: 50%;
+      }
+      @include iphone {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+
+    &__title {
+      color: $primary-color;
+      font-weight: bold;
+      font-size: $font-s * 2;
+      @include ipadPro {
+        font-size: $font-m;
+        color: $secondary-color;
+      }
+      @include iphone {
+        font-size: $font-s;
+      }
+    }
+    &__subtitleBox {
+      display: flex;
+
+      justify-content: space-between;
+      padding-bottom: 26px;
+      @include ipadPro {
+        padding-bottom: 16px;
+      }
+    }
+    &__subtitle {
+      font-size: $font-m;
+      @include ipadPro {
+        font-size: $font-s;
+      }
+      @include iphone {
+        font-size: $font-xs;
+      }
+    }
+    &__time {
+      font-size: $font-s;
+      color: gray;
+
+      @include iphone {
+        font-size: $font-xs;
+      }
+    }
+
+    &__content {
+      font-size: $font-m;
+      color: $gray;
+      padding-bottom: 20px;
+      @include ipadPro {
+        font-size: $font-xs;
+        //  hide the text
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+      }
+      @include iphone {
+        display: none;
+      }
+    }
+
+    .moreInfoButton {
+      display: block;
+      color: $secondary-color;
+      font-weight: 900;
+      font-size: $font-xl;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      @include ipadPro {
+        position: unset;
+        display: inline;
+        font-size: $font-xs;
+        color: $gray;
+        text-transform: lowercase;
+      }
+      @include iphone {
+        display: none;
+      }
+    }
+  }
+
+  .pageNavigation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

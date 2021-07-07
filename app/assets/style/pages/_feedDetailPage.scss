@@ -1,0 +1,138 @@
+.feedDetailPage {
+  padding-bottom: 100px;
+  @include iphone {
+    padding: 15px;
+  }
+
+  .routeList {
+    display: flex;
+
+    .item {
+      font-size: $font-xs;
+      position: relative;
+    }
+    .item + .item {
+      padding-left: 10px;
+    }
+
+    & > li:last-child {
+      color: $primary-color;
+    }
+  }
+
+  .hashtagList {
+    display: flex;
+
+    & > li {
+      //   padding: 0 10px;
+      color: $primary-color;
+      font-weight: bold;
+    }
+    .item + .item {
+      padding-left: 10px;
+    }
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > article {
+      width: 66%;
+      padding-right: 30px;
+      @include iphone {
+        width: 100%;
+        padding-right: 0;
+      }
+      h2 {
+        font-size: $font-s * 2;
+        font-weight: bold;
+      }
+      h3 {
+        font-size: $font-s;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 16px;
+      }
+      .time {
+        color: $gray;
+        font-weight: normal;
+      }
+      & > p {
+        padding: 16px 0;
+        color: $gray;
+      }
+    }
+    & > aside {
+      width: 34%;
+      @include iphone {
+        width: 100%;
+      }
+      color: $primary-color;
+      font-weight: bold;
+      .tagsBox {
+        display: flex;
+        align-items: center;
+        font-size: $font-m;
+        .tagIcon {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .hashtagBox {
+        width: 150px;
+        @include iphone {
+          width: 100%;
+        }
+        & > li {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  &__bottomNav {
+    & > h4 {
+      display: flex;
+      align-items: center;
+      padding-bottom: 16px;
+      font-weight: bold;
+      border-bottom: 1px solid black;
+      & > img {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+      }
+    }
+
+    .navBox {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 16px;
+      @include iphone {
+        display: unset;
+      }
+      & > a {
+        display: block;
+        display: flex;
+      }
+      .prevBox {
+        margin-top: 8px;
+      }
+      .nextBox {
+        margin-top: 8px;
+        @include iphone {
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+        }
+      }
+      .nextIcon {
+        margin-left: 8px;
+      }
+      .prevIcon {
+        margin-right: 8px;
+      }
+    }
+  }
+}

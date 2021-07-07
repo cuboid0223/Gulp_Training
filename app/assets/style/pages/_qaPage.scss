@@ -1,0 +1,42 @@
+.qaPage {
+  .mainContainer {
+    margin-top: 80px;
+    font-weight: bold;
+    @include iphone {
+      margin-top: 24px;
+      padding: 15px;
+    }
+  }
+  .mainContainer > h2 {
+    font-size: $font-s * 2;
+
+    margin-bottom: 36px;
+    @include iphone {
+      font-size: $font-m;
+      margin-bottom: 12px;
+    }
+  }
+  .questionsList {
+    margin-bottom: 360px;
+    @include iphone {
+      margin-bottom: 40px;
+    }
+  }
+  .questionsList > li {
+    margin-bottom: 40px;
+  }
+  .question {
+    font-size: $font-m;
+    margin-bottom: 16px;
+    @include iphone {
+      font-size: $font-s;
+    }
+  }
+  .answer {
+    font-size: $font-s;
+    margin-left: 50px;
+    @include iphone {
+      margin-left: 0;
+    }
+  }
+}
