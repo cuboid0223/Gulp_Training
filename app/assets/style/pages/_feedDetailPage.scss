@@ -136,3 +136,23 @@
     }
   }
 }
+
+.blogPage__nav {
+  @include iphone {
+    display: block !important;
+  }
+  .blogPage__optionsList {
+    @include iphone {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  .blogPage__optionsList > li {
+    font-size: $font-s;
+  }
+  .searchIcon {
+    @include iphone {
+      display: none;
+    }
+  }
+}
