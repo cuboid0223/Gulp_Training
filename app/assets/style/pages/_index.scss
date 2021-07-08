@@ -1,7 +1,7 @@
 .banner {
   height: 840px;
   background-size: 100% 100%;
-  background-image: url("../../../assets/images/banner.png");
+  background-image: url("../../assets/images/banner.png");
   color: $secondary-color;
   font-weight: bold;
   position: relative;
@@ -9,14 +9,17 @@
     background-image: url("../../assets/images/banner-sm.png");
     height: 394px;
   }
+
+  &__box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
   &__title {
-    max-width: 576px;
     font-size: $font-xxxl;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    margin-left: auto;
+
     @include iphone {
-      // width: 288px;
       font-size: $font-s * 2;
       position: unset;
       padding: 160px 15px 160px 72px;
@@ -41,10 +44,17 @@
     flex-wrap: wrap;
     justify-content: space-around;
     & > li {
-      width: 200px;
+      width: 25%;
+      padding: 0 24px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include ipad {
+        width: 50%;
+      }
+      @include iphone {
+        width: 100%;
+      }
     }
     img {
       width: 100px;
@@ -60,7 +70,6 @@
     p {
       padding-top: 4px;
       padding-bottom: 80px;
-      font-size: $font-s;
       text-align: left;
     }
   }
@@ -81,9 +90,6 @@
 
 .productCategories {
   text-align: center;
-  @include iphone {
-    padding: 8px;
-  }
 
   .listItem {
     display: flex;
@@ -151,7 +157,7 @@
 
 .crossoverDesign {
   background-position: center;
-  padding-bottom: 80px;
+  margin-bottom: 80px;
   background-image: url("../../assets/images/bg.png");
   .title {
     color: white;
@@ -161,9 +167,10 @@
     font-weight: bold;
     justify-content: center;
     flex-wrap: wrap;
+
     a {
       display: block;
-      width: 540px;
+      width: 50%;
       height: 472px;
       display: flex;
       justify-content: center;
@@ -171,9 +178,9 @@
       position: relative;
       font-size: $font-xxxxl;
       color: $secondary-color;
-      z-index: 1;
+      z-index: 2;
       @include iphone {
-        width: 345px;
+        width: 100%;
         height: 284px;
         margin-bottom: 16px;
         font-size: $font-s * 2;
@@ -207,34 +214,30 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    // background-color: red;
     @include iphone {
       justify-content: center;
     }
   }
 
   .listItem {
-    width: 255px;
+    width: 25%;
     border: 1px solid #dee2e6;
     @include iphone {
-      width: 345px;
+      width: 100%;
       margin-bottom: 16px;
     }
     .photo {
       width: 100%;
-      height: 255px;
     }
     .textBox {
       padding: 14px;
+      color: #212529;
     }
     .name {
-      color: #212529;
       font-size: $font-xs;
       font-weight: bold;
     }
     .content {
-      color: #212529;
-      font-size: $font-s;
       padding-top: 7px;
       padding-bottom: 10px;
     }
@@ -246,7 +249,6 @@
 }
 
 .contact {
-  //   text-align: center;
   background-color: $lightpink;
   padding-bottom: 50px;
   @include iphone {
@@ -261,38 +263,30 @@
   }
   &__subtitle {
     font-size: $font-m;
-    @include iphone {
-      font-size: $font-s;
-    }
+    margin-bottom: 16px;
   }
   &__form {
     display: flex;
     flex-direction: column;
   }
-  label {
-    font-size: $font-s;
-    margin-top: 16px;
-  }
+
   input[type="text"],
   textarea {
     border: black solid 1px;
     padding: 14px 16px;
+    margin-bottom: 16px;
     background-color: $lightpink;
   }
-  .checkbox {
-    margin-top: 16px;
-
-    & > span {
-      @include iphone {
-        font-size: $font-xs;
-      }
+  .checkbox > span {
+    @include iphone {
+      font-size: $font-xs;
     }
   }
   &__submitBtn {
     border: none;
     font-size: $font-m;
     color: white;
-    width: 40%;
+    min-width: 350px;
     padding: 16px;
     margin: 42px auto;
     background-color: $primary-color;

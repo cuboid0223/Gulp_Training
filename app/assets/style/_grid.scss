@@ -1,16 +1,23 @@
 @mixin desktop {
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     @content;
   }
 }
 
 @mixin ipadPro {
-  @media  (max-width: 1025px) {
+  @media (max-width: 1025px) {
     @content;
   }
 }
+
+@mixin ipad {
+  @media (max-width: 769px) {
+    @content;
+  }
+}
+
 @mixin iphone {
-  @media (max-width: 568px) {
+  @media (max-width: 414px) {
     @content;
   }
 } ;
