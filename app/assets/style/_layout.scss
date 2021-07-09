@@ -1,7 +1,9 @@
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  
+  @include ipadPro {
+    max-width: 900px;
+  }
   @include ipad {
     max-width: 690px;
   }
