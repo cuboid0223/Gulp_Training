@@ -1,7 +1,24 @@
 .feedDetailPage {
   padding-bottom: 100px;
-  @include iphone {
-    padding: 15px;
+  
+  .blogPage__nav {
+    display: block !important;
+    margin-bottom: 8px;
+
+    .blogPage__optionsList {
+      @include iphone {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+    .blogPage__optionsList > li {
+      font-size: $font-s;
+    }
+    .searchIcon {
+      @include iphone {
+        display: none;
+      }
+    }
   }
 
   .routeList {
@@ -24,7 +41,6 @@
     display: flex;
 
     & > li {
-      //   padding: 0 10px;
       color: $primary-color;
       font-weight: bold;
     }
@@ -38,7 +54,7 @@
     flex-wrap: wrap;
 
     & > article {
-      width: 66%;
+      width: 75%;
       padding-right: 30px;
       @include iphone {
         width: 100%;
@@ -55,6 +71,10 @@
         justify-content: space-between;
         padding-bottom: 16px;
       }
+
+      img{
+        width: 100%;
+      }
       .time {
         color: $gray;
         font-weight: normal;
@@ -65,7 +85,7 @@
       }
     }
     & > aside {
-      width: 34%;
+      width: 25%;
       @include iphone {
         width: 100%;
       }
@@ -133,26 +153,6 @@
       .prevIcon {
         margin-right: 8px;
       }
-    }
-  }
-}
-
-.blogPage__nav {
-  @include iphone {
-    display: block !important;
-  }
-  .blogPage__optionsList {
-    @include iphone {
-      width: 100%;
-      justify-content: space-between;
-    }
-  }
-  .blogPage__optionsList > li {
-    font-size: $font-s;
-  }
-  .searchIcon {
-    @include iphone {
-      display: none;
     }
   }
 }

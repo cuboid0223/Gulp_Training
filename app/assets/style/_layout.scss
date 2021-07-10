@@ -1,14 +1,15 @@
 .container {
-  max-width: 1110px;
+  max-width: 1140px;
+  padding: 0 15px;
   margin: 0 auto;
   @include ipadPro {
-    max-width: 900px;
+    max-width: 930px;
   }
   @include ipad {
-    max-width: 690px;
+    max-width: 720px;
   }
   @include iphone {
-    max-width: 345px;
+    max-width: 375px;
   }
 }
 
@@ -60,7 +61,7 @@
       font-size: $font-m;
       margin-right: 60px;
       transition: 0.5s;
-      padding: 5px;
+      padding: 8px;
       @include iphone {
         margin-right: 0;
       }

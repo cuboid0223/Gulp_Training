@@ -4,7 +4,6 @@
     font-weight: bold;
     @include iphone {
       margin-top: 24px;
-      padding: 15px;
     }
   }
   .mainContainer > h2 {
@@ -34,7 +33,7 @@
   }
   .answer {
     font-size: $font-s;
-    margin-left: 50px;
+    margin-left: 95px;
     @include iphone {
       margin-left: 0;
     }

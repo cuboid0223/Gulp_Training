@@ -2,20 +2,19 @@
   //   background-color: blue;
   &__list {
     display: flex;
-    width: fit-content;
+    max-width: 1386px;
     margin: 0 auto;
-    // background-color: red;
   }
   &__listItem {
-    width: 462px;
+    width: 100%;
     position: relative;
     overflow: hidden;
     @include ipadPro {
-      width: 256px;
+      width: 50%;
       padding: 16px 21px 8px;
     }
     @include iphone {
-      width: 125px;
+      width: 34%;
       border: 1px solid #dcdcdc;
       padding: 8px 13px 4px;
     }
@@ -86,10 +85,10 @@
   }
 }
 
-.opticalPage__container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+// .opticalPage__container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
 
 .opticalPage__mainContainer {
   padding-bottom: 168px;
@@ -106,7 +105,6 @@
   }
   .productsList {
     display: flex;
-    max-width: 1140px;
     margin: 0 auto;
     flex-wrap: wrap;
     @include ipadPro {
@@ -115,18 +113,22 @@
 
     & > li {
       cursor: pointer;
-      margin: 0 15px 104px;
-      @include iphone {
-        margin: 0 auto 104px;
+      padding: 0 15px 104px;
+      width: 25%;
+     
+      @include ipadPro {
+        width: 50%;
       }
+      @include iphone {
+        width: 100%;
+        padding: 0  ;
+      }
+    
     }
   }
   .product__image {
-    width: 255px;
-    height: 164px;
-    @include ipadPro {
-      width: 320px;
-    }
+    width: 100%;
+    background-size: contain;
   }
 
   .product__info {
@@ -141,7 +143,6 @@
 
   .colorList {
     display: flex;
-
     cursor: pointer;
     & > li {
       width: 24px;
@@ -159,6 +160,7 @@
 }
 
 .pageNavigation {
+
   &__list {
     display: flex;
     width: fit-content;
@@ -166,12 +168,24 @@
     border-top: 1px solid $gray;
     border-bottom: 1px solid $gray;
     color: $gray;
+  
   }
   .page > a {
     padding: 10px 17px 14px 14px;
+    font-size: 18px;
+    @include iphone {
+      font-size: 11px;
+      height: 32px;
+      padding: 8px 10px 11px 9px;
+    }
   }
   .pageButton > a {
     padding: 10px 12px 14px;
+    font-size: 19px;
+    @include iphone {
+      font-size: 12px;
+      padding: 8px 8px 7px 9px;
+    }
   }
   .pageButton > a,
   .page > a {

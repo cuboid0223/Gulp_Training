@@ -2,10 +2,16 @@
   &__banner {
     height: 304px;
     background-position: center;
-    background-image: url(../../assets/images/qa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/blog-4.png);
+    @include ipadPro {
+      height: 304px;
+      background-image: url(../../assets/images/qa.png);
+    }
     @include iphone {
       height: 143px;
-      background-image: url(../../assets/images/blog-4.png);
+      background-image: url(../../assets/images/qa.png);
     }
     & > .container {
       height: 100%;
@@ -48,18 +54,26 @@
 }
 
 .locationListItem {
-  width: 350px;
+  width: 33%;
   margin-bottom: 32px;
-  padding-left: 30px;
-  & > h3 {
+  padding: 0 15px;
+  @include ipadPro {
+    width: 50%;
+  }
+  @include iphone {
+    width: 100%;
+    padding: 0;
+  }
+
+  & h3 {
     padding: 12px 0 12px 24px;
     border: 1px solid #00000020;
     font-size: $font-l;
     font-weight: bold;
   }
-  & > .info {
+  & .info {
     font-size: $font-m;
-    padding: 16px 24px;
+    padding: 16px 28px;
     border: 1px solid #00000020;
   }
   .infoItem {
@@ -90,8 +104,13 @@
     font-size: $font-l;
     font-weight: bold;
     margin-right: 20px;
+    @include ipadPro {
+      font-size: unset;
+      font-weight: normal;
+    }
     @include iphone {
       font-size: $font-xs;
+      margin-right: 12px;
     }
   }
   & > select {
@@ -101,11 +120,12 @@
     color: #495057;
     padding: 10px;
     border: 1px solid #ced4da;
+    @include ipadPro {
+      font-size: unset;
+    }
     @include iphone {
       font-size: $font-xs;
       padding: 8px;
     }
   }
 }
-
-

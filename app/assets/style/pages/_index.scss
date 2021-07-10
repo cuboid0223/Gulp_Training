@@ -22,7 +22,6 @@
     font-size: $font-xxxl;
     margin-left: auto;
     @include ipad {
-     
       font-size: $font-l * 2;
     }
 
@@ -124,11 +123,7 @@
       }
     }
     & > img {
-      max-width: 635px;
-      min-width: 345px;
-      @include ipad {
-        width: 60%;
-      }
+      width: 60%;
     }
     &:nth-child(odd) > img {
       margin-right: 30px;
@@ -231,13 +226,13 @@
       height: 100%;
     }
     .doubleA {
-      background-size: 100%;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       background-image: url("../../assets/images/product-8.png");
     }
     .YOUTH {
-      background-size: 100%;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       background-image: url("../../assets/images/product-9.png");
@@ -261,7 +256,7 @@
     width: 23%;
     border: 1px solid #dee2e6;
     margin-bottom: 28px;
-    @include ipad {
+    @include ipadPro {
       width: 48%;
     }
     @include iphone {

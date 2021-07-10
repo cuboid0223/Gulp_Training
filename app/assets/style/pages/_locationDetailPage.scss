@@ -1,31 +1,51 @@
 .locationDetail {
-  height: 100%;
 
   .mainContainer {
     display: flex;
     flex-wrap: wrap;
     padding-top: 38px;
-    height: fit-content;
-    padding-bottom: 300px;
-    @include iphone {
-      padding: 15px;
-    }
+    margin-bottom: 300px;
   }
 
   .locationListItem {
-    width: 445px;
-    padding-left: 0;
+    width: 35%;
+    padding: 0;
+    @include ipadPro {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    @include iphone {
+      display: unset;
+    }
+    & > .infoBox {
+      @include ipadPro {
+        padding-left: 30px;
+      }
+      @include iphone {
+        padding-left: 0;
+      }
+    }
 
     & > img {
       width: 100%;
       height: 224px;
+      @include ipadPro {
+        width: 50%;
+      }
+      @include iphone {
+        width: 100%;
+      }
     }
   }
   #map {
-    width: 635px;
+    width: 60%;
     height: 422px;
     margin-left: 30px;
-
+    @include ipadPro {
+      width: 100%;
+      margin-left: 0;
+    }
     @include iphone {
       margin-left: 0;
       height: 227px;

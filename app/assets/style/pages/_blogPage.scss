@@ -1,42 +1,51 @@
 .blogPage {
   &__nav {
     background-color: $secondary-color;
+    margin-bottom: 82px;
     @include iphone {
       display: none;
+      margin-bottom: 0;
+    }
+
+    .searchIcon {
+      margin-left: auto;
+      cursor: pointer;
     }
   }
   &__nav > .container {
     display: flex;
-    justify-content: space-between;
   }
   &__optionsList {
     display: flex;
-    justify-content: space-around;
 
     & > li {
       font-size: $font-m;
       color: white;
-      padding: 10px;
+      line-height: 1.2;
+      padding: 16px 0;
     }
-  }
-  .searchIcon {
-    cursor: pointer;
+
+    li + li {
+      margin-left: 32px;
+      @include iphone {
+        margin-left: 24px;
+      }
+    }
   }
 
   .feedsList {
-    margin-top: 82px;
+    margin-bottom: 100px;
     @include iphone {
       padding: 24px 15px 0px;
-      margin-top: 0;
+      margin-bottom: 47px;
     }
   }
 
   .feed {
     display: flex;
-
     margin-bottom: 60px;
     @include iphone {
-      margin-bottom: 0;
+      margin-bottom: 26px;
       flex-wrap: wrap;
     }
     & > a {
@@ -80,14 +89,13 @@
     &__subtitle {
       font-size: $font-m;
       @include ipadPro {
-        font-size: $font-s;
+        font-size: unset;
       }
       @include iphone {
         font-size: $font-xs;
       }
     }
     &__time {
-      font-size: $font-s;
       color: gray;
 
       @include iphone {
@@ -98,7 +106,6 @@
     &__content {
       font-size: $font-m;
       color: $gray;
-      padding-bottom: 20px;
       @include ipadPro {
         font-size: $font-xs;
         //  hide the text
@@ -137,7 +144,9 @@
   }
 
   .pageNavigation {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
+    @include iphone {
+      margin-bottom: 56px;
+    }
   }
 }
