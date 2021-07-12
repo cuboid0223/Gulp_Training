@@ -62,6 +62,9 @@
       margin-right: 60px;
       transition: 0.5s;
       padding: 8px;
+      @include ipad {
+        margin-right: 10px;
+      }
       @include iphone {
         margin-right: 0;
       }

@@ -124,6 +124,9 @@
     }
     & > img {
       width: 60%;
+      @include iphone {
+        width: unset;
+      }
     }
     &:nth-child(odd) > img {
       margin-right: 30px;
@@ -179,9 +182,7 @@
   background-repeat: no-repeat;
   margin-bottom: 80px;
   background-image: url("../../assets/images/bg.png");
-  .container {
-    padding: 40px 0;
-  }
+
   .title {
     color: white;
   }
@@ -190,6 +191,8 @@
     font-weight: bold;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 40px;
+    
 
     a {
       display: block;
@@ -329,8 +332,8 @@
     border: none;
     font-size: $font-m;
     color: white;
-    width: 350px;
-    min-width: 165px;
+    width: 100%;
+    // min-width: 165px;
     padding: 16px;
     margin: 42px auto;
     background-color: $primary-color;
